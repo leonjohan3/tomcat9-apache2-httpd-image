@@ -29,4 +29,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && unlink /usr/share/tomcat9/lib/tomcat-i18n-ja.jar \
     && unlink /usr/share/tomcat9/lib/tomcat-i18n-ru.jar
     
-# Run as the default user (to be set in the leaf image)
+COPY dbmmanage /usr/local/bin
+
+# Run as the default user
+USER default
