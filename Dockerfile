@@ -18,6 +18,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     && rm -r /usr/share/man \
     && rm -r /usr/share/doc \
     && unlink /usr/share/tomcat9/lib/tomcat-websocket.jar \
+    && unlink /usr/share/tomcat9/lib/annotations-api.jar \
     && unlink /usr/share/tomcat9/lib/websocket-api.jar \
     && unlink /usr/share/tomcat9/lib/catalina-tribes.jar \
     && unlink /usr/share/tomcat9/lib/catalina-storeconfig.jar \
